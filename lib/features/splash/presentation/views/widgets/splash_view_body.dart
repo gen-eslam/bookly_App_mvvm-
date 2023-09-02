@@ -69,7 +69,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigation() => Get.to(
         () => const HomeView(),
-        transition: Transition.fade,
+        transition: Transition.rightToLeftWithFade,
         duration: kTransitionDuration,
       );
 }
