@@ -1,9 +1,8 @@
-import 'package:bookly_mvvm_bloc/features/home/presentation/view/home_view.dart';
+import 'package:bookly_mvvm_bloc/core/utils/app_router.dart';
 import 'package:bookly_mvvm_bloc/features/splash/presentation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
-import '../../../../../constants.dart';
 import 'fading_logo.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -67,9 +66,5 @@ class _SplashViewBodyState extends State<SplashViewBody>
     });
   }
 
-  void navigation() => Get.to(
-        () => const HomeView(),
-        transition: Transition.rightToLeftWithFade,
-        duration: kTransitionDuration,
-      );
+  void navigation() => GoRouter.of(context).push(AppRouter.kHomeView);
 }
