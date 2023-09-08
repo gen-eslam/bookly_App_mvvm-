@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/utils/assets.dart';
+import '../../../../../../../core/utils/assets.dart';
 
 class ItemImageView extends StatelessWidget {
   const ItemImageView({super.key});
