@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../../constants.dart';
 import '../../../../../../../core/utils/styles.dart';
-import 'book_rating.dart';
+import '../book_rating.dart';
 
 class ItemBodyView extends StatelessWidget {
   const ItemBodyView({super.key});
