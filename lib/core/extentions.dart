@@ -15,6 +15,13 @@ extension RaduisSide on Side {
           bottomLeft: Radius.circular(radius),
           topLeft: Radius.circular(radius),
         );
+      case Side.all:
+        return BorderRadius.only(
+          bottomLeft: Radius.circular(radius),
+          topLeft: Radius.circular(radius),
+          topRight: Radius.circular(radius),
+          bottomRight: Radius.circular(radius),
+        );
     }
   }
 }

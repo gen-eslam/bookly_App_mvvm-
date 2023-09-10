@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../../../core/utils/assets.dart';
 
@@ -11,7 +12,7 @@ class ItemImageView extends StatelessWidget {
       aspectRatio: 2.5 / 4,
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(8).r,
           color: Colors.white,
           image: const DecorationImage(
             fit: BoxFit.fill,

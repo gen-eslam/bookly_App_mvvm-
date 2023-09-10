@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../../../constants.dart';
 import '../../../../../../../core/utils/styles.dart';
-import '../book_rating.dart';
+import '../reuseable_componant/book_rating.dart';
 
 class ItemBodyView extends StatelessWidget {
   const ItemBodyView({super.key});
@@ -22,10 +23,10 @@ class ItemBodyView extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-          const SizedBox(
-            height: 3,
+          SizedBox(
+            height: 3.h,
           ),
-          const Text("J.K. Rowling", style: Styles.textStyle14),
+          Text("J.K. Rowling", style: Styles.textStyle14),
           // const SizedBox(
           //   height: 3,
           // ),

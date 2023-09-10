@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'best_seller_list_view_item.dart';
 
@@ -13,8 +14,8 @@ class BestSellerListView extends StatelessWidget {
       scrollDirection: Axis.vertical,
       itemCount: 10,
       itemBuilder: (context, index) => const BestSellerListViewItem(),
-      separatorBuilder: (context, index) => const SizedBox(
-        height: 13,
+      separatorBuilder: (context, index) => SizedBox(
+        height: 13.h,
       ),
     );
   }
