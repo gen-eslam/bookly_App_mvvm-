@@ -10,7 +10,6 @@ class SearchResultListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       physics: const BouncingScrollPhysics(),
-      padding: EdgeInsets.only(top: 20.h),
       scrollDirection: Axis.vertical,
       itemCount: 10,
       itemBuilder: (context, index) => const BookListViewItem(),
