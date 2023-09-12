@@ -7,7 +7,7 @@ abstract class NewsetBookCubitState extends Equatable {
   List<Object> get props => [];
 }
 
-final class NewsetBookCubitInitial extends NewsetBookCubitState {}
+final class NewestBookCubitInitial extends NewsetBookCubitState {}
 
 final class NewsetBooksLoading extends NewsetBookCubitState {}
 
