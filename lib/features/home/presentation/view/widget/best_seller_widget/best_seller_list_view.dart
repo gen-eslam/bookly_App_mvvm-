@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'best_seller_list_view_item.dart';
 
-class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
+class NewsetListView extends StatelessWidget {
+  const NewsetListView({super.key});
 
   @override
   Widget build(BuildContext context) {
