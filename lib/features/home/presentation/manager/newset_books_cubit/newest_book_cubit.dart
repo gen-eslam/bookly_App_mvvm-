@@ -4,7 +4,7 @@ import 'package:equatable/equatable.dart';
 
 import '../../../data/models/book_model/book_model.dart';
 
-part 'newset_book_cubit_state.dart';
+part 'newest_book_cubit_state.dart';
 
 class NewsetBookCubit extends Cubit<NewsetBookCubitState> {
   NewsetBookCubit({required this.homeRepo}) : super(NewestBookCubitInitial());
@@ -12,10 +12,10 @@ class NewsetBookCubit extends Cubit<NewsetBookCubitState> {
   HomeRepo homeRepo;
 
   Future<void> fetchNewestBooks() async {
-    emit(NewsetBooksLoading());
+    emit(NewestBooksLoading());
     var result = await homeRepo.fetchNewestBooks();
     result.fold((failure) {
-      emit(NewsetBooksFailure(failure.errorMessage));
-    }, (books) => emit(NewsetBooksSueccess(books)));
+      emit(NewestBooksFailure(failure.errorMessage));
+    }, (books) => emit(NewestBooksSueccess(books)));
   }
 }

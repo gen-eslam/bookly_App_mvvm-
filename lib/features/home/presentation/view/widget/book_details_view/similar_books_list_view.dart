@@ -14,7 +14,9 @@ class SimilarBooksListView extends StatelessWidget {
         itemCount: 10,
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) => const CustomBookImage(),
+        itemBuilder: (context, index) => const CustomBookImage(
+            imageUrl:
+                "https://popupsmart.com/encyclopedia/images/u/r/l/-/i/url-image-7a74f0de.png"),
         separatorBuilder: (context, index) => SizedBox(
           width: 5.w,
         ),

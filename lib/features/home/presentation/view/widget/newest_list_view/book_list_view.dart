@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'best_seller_list_view_item.dart';
+import 'book_list_view_item.dart';
 
 class NewsetListView extends StatelessWidget {
   const NewsetListView({super.key});

@@ -18,7 +18,9 @@ class BookDetailsSection extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(
               horizontal: MediaQuery.of(context).size.width * 0.25),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(
+              imageUrl:
+                  "https://popupsmart.com/encyclopedia/images/u/r/l/-/i/url-image-7a74f0de.png"),
         ),
         SizedBox(
           height: 15.h,

@@ -1,4 +1,4 @@
-part of 'newset_book_cubit.dart';
+part of 'newest_book_cubit.dart';
 
 abstract class NewsetBookCubitState extends Equatable {
   const NewsetBookCubitState();
@@ -9,16 +9,16 @@ abstract class NewsetBookCubitState extends Equatable {
 
 final class NewestBookCubitInitial extends NewsetBookCubitState {}
 
-final class NewsetBooksLoading extends NewsetBookCubitState {}
+final class NewestBooksLoading extends NewsetBookCubitState {}
 
-final class NewsetBooksSueccess extends NewsetBookCubitState {
+final class NewestBooksSueccess extends NewsetBookCubitState {
   final List<BookModel> books;
 
-  const NewsetBooksSueccess(this.books);
+  const NewestBooksSueccess(this.books);
 }
 
-final class NewsetBooksFailure extends NewsetBookCubitState {
+final class NewestBooksFailure extends NewsetBookCubitState {
   final String errorMessage;
 
-  const NewsetBooksFailure(this.errorMessage);
+  const NewestBooksFailure(this.errorMessage);
 }
