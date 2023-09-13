@@ -75,7 +75,7 @@ class BookListViewItem extends StatelessWidget {
                         ),
                         BookRating(
                             rating:
-                                bookModel?.volumeInfo?.averageRating as double?,
+                                bookModel?.volumeInfo?.averageRating ,
                             count: bookModel?.volumeInfo?.ratingsCount),
                       ],
                     ),

@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../../../../../core/utils/styles.dart';
 
 class BookRating extends StatelessWidget {
-  final double? rating;
+  final num? rating;
   final int? count;
   final MainAxisAlignment mainAxisAlignment;
 
