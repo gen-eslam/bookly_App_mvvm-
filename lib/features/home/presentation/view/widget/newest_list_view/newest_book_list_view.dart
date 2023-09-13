@@ -12,16 +12,17 @@ class NewsetListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<NewsetBookCubit, NewsetBookCubitState>(
+    return BlocConsumer<NewsetBookCubit, NewsetBookCubitState>(
+      listener: (context, state) => print(state),
       builder: (context, state) {
         if (state is NewestBooksSueccess) {
           return ListView.separated(
             padding: EdgeInsets.zero,
             physics: const NeverScrollableScrollPhysics(),
             scrollDirection: Axis.vertical,
-            itemCount: state.books.length,
+            itemCount: state.books!.length,
             itemBuilder: (context, index) => BookListViewItem(
-              bookModel: state.books[index],
+              bookModel: state.books![index],
             ),
             separatorBuilder: (context, index) => SizedBox(
               height: 13.h,

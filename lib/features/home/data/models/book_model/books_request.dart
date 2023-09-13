@@ -8,11 +8,11 @@ class BooksRequest extends Equatable {
 
   BooksRequest({required this.items, this.kind, this.totalItem});
 
-  factory BooksRequest.fromJson(Map<String, dynamic> json) => BooksRequest(
-        kind: json["kind"],
-        totalItem: json["totalItem"],
+  factory BooksRequest.fromJson(Map<String, dynamic>? json) => BooksRequest(
+        kind: json?["kind"],
+        totalItem: json?["totalItem"],
         items: List<BookModel>.from(
-            json["items"].map((e) => BookModel.fromJson(e))),
+            json?["items"].map((e) => BookModel.fromJson(e))),
       );
 
   Map<String, dynamic> toJson() => {

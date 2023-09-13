@@ -12,7 +12,7 @@ final class NewestBookCubitInitial extends NewsetBookCubitState {}
 final class NewestBooksLoading extends NewsetBookCubitState {}
 
 final class NewestBooksSueccess extends NewsetBookCubitState {
-  final List<BookModel> books;
+  final List<BookModel>? books;
 
   const NewestBooksSueccess(this.books);
 }
