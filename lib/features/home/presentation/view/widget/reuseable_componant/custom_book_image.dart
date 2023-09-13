@@ -1,7 +1,8 @@
-import 'package:bookly_mvvm_bloc/core/utils/styles.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../../../core/widgets/custom_image_error_widget.dart';
 
 class CustomBookImage extends StatelessWidget {
   final String? imageUrl;
@@ -25,24 +26,7 @@ class CustomBookImage extends StatelessWidget {
   }
 
   Widget? _errorWidget() {
-    return _checkImageIsNull()
-        ? Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(
-                Icons.error,
-                color: Colors.red,
-              ),
-              SizedBox(
-                height: 10.h,
-              ),
-              Text("Image Not Found",
-                  style: Styles.textStyle14.copyWith(
-                    color: Colors.red,
-                  )),
-            ],
-          )
-        : null;
+    return _checkImageIsNull() ? const CustomImageError() : null;
   }
 
   DecorationImage? _decorationImage() {

@@ -12,7 +12,7 @@ class SearchResultListView extends StatelessWidget {
       physics: const BouncingScrollPhysics(),
       scrollDirection: Axis.vertical,
       itemCount: 10,
-      itemBuilder: (context, index) => const BookListViewItem(),
+      itemBuilder: (context, index) => const BookListViewItem(bookModel: null),
       separatorBuilder: (context, index) => SizedBox(
         height: 13.h,
       ),

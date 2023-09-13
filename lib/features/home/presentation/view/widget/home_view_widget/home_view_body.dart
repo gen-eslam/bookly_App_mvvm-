@@ -2,7 +2,7 @@ import 'package:bookly_mvvm_bloc/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../newest_list_view/book_list_view.dart';
+import '../newest_list_view/newest_book_list_view.dart';
 import 'custom_app_bar.dart';
 import 'featured_list_view.dart';
 
@@ -17,7 +17,7 @@ class HomeViewBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30).w,
+              padding: EdgeInsets.only(left: 30.w, right: 30.w, top: 30.h),
               child: const CustomAppBar(),
             ),
             const FeaturedBooksListView(),
@@ -27,7 +27,7 @@ class HomeViewBody extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30).w,
               child: Text(
-                "Best Seller",
+                "Newest Books",
                 style: Styles.textStyle18,
                 textAlign: TextAlign.start,
               ),
