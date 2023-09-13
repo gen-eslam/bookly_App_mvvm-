@@ -12,8 +12,7 @@ class NewsetListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<NewsetBookCubit, NewsetBookCubitState>(
-      listener: (context, state) => print(state),
+    return BlocBuilder<NewsetBookCubit, NewsetBookCubitState>(
       builder: (context, state) {
         if (state is NewestBooksSueccess) {
           return ListView.separated(
